@@ -40,6 +40,9 @@
          url('../fonts/ubuntu-v19-latin-700.svg#Ubuntu') format('svg'); /* Legacy iOS */
   }
   
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
 
 .container {
     display: flex;
@@ -83,4 +86,52 @@ ul {
 .page-header__site-nav-a:hover, .page-header__site-nav-a:active, .page-header__site-nav-a:focus {
     font-weight: 800px;
     color: #212353;
+}
+
+.page-about {
+    margin-top: 145px;
+}
+
+.page-about__h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 88px;
+    color: #212353;
+    width: 645px;
+}
+
+.page-about__p {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #4B5D68;
+    width: 380px;
+    margin-top: 50px;
+}
+
+.page-about__button {
+    display: block;
+    width :170px;
+    height: 60px;
+    border-radius: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 160%;
+    color: white;
+    background: #9C69E2;
+    border: none;
+    margin-top: 66px;
+}
+
+.page-about__img-wrapper {
+    position: absolute;
+}
+
+.page-about__img {
+    position: relative;
+    left: 450px;
+    bottom: -25px;
 }
