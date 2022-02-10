@@ -161,6 +161,127 @@ ul {
     margin-top: 40px;
 }
 
-.page-learn-more__img-wrapper {
+.page-features {
+    margin-top: 182px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.page-features__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-features__h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    color: #212353;
+}
+
+.page-features__p {
+    width: 584px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #4B5D68;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.page-features__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.page-features__li {
+    display: flex;
+    width: 442px;
+    height: 358px;
+    align-items: center;
+}
+
+.page-features__li:nth-child(1) {
+    background: url("../img/feature-bg-1.png");
+    background-repeat: no-repeat;
+    margin-right: 150px;
+    margin-bottom: 50px;
+}
+
+.page-features__li:nth-child(2) {
+    background: url("../img/feature-bg-2.png");
+    background-repeat: no-repeat;
+}
+
+.page-features__li:nth-child(3) {
+    background: url("../img/feature-bg-3.png");
+    background-repeat: no-repeat;
+    margin-right: 150px;
+    margin-bottom: 50px;
+}
+
+.page-features__li:nth-child(4) {
+    background: url("../img/feature-bg-4.png"); 
+    background-repeat: no-repeat;   
+}
+
+.page-features__img-wrapper {
+    width: 180px;
+}
+
+.page-features__img {
+    position: relative;
+    left: -100px;
+}
+
+.page-features__description-wrapper {
+    padding-right: 50px;
+}
+
+.page-features__h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 130%;
+    color: #212353;
+    margin-bottom: 20px;
+}
+
+.page-features__description {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #4B5D68;
+    width: 220px;
+    margin-bottom: 20px;
+
+}
+
+.page-features_a {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.005em;
+    color: #212353;
+    position: relative;
+    
+}
+
+.page-features_a:after {
+    display: block;
+    width: 25px;
+    height: 20px;
+    content: '';
+    background-image: url("../img/arrow-right.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -45px;
+    top: 5px;
 }
