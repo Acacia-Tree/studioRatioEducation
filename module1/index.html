@@ -13,12 +13,15 @@
     <body>
         
         <header class="page-header container"> 
-            <img class="page-header__logo" src="img/Logo.svg" alt="Логотип Warehouse">
+            <div class="page-header__logo-wrapper">
+                <img class="page-header__logo" src="img/Logo.svg" alt="Логотип Warehouse">
+            </div>
+            
             <nav>
                 <ul class="page-header__site-nav-ul">
-                    <li class="page-header__site-nav-li"><a class= "page-header__site-nav-a" href="#">About</a></li>
-                    <li class="page-header__site-nav-li"><a class= "page-header__site-nav-a" href="#">Help</a></li>
-                    <li class="page-header__site-nav-li"><a class= "page-header__site-nav-a" href="#">Features</a></li>
+                    <li class="page-header__site-nav-li"><a class= "page-header__site-nav-a" href="#learn-more">About</a></li>
+                    <li class="page-header__site-nav-li"><a class= "page-header__site-nav-a" href="#help">Help</a></li>
+                    <li class="page-header__site-nav-li"><a class= "page-header__site-nav-a" href="#features">Features</a></li>
                 </ul>
             </nav>
         </header>
@@ -28,13 +31,13 @@
                 <p class="page-about__p">Data Warehouse is a data storage area that has been
                     tested for security, so you can store your data here
                     safely but not be afraid of being stolen by others.</p>
-                <button class="page-about__button">Learn more</button>
+                <a class="page-about__button" href="#learn-more" >Learn more</a>
             </div>
             <div class="page-about__img-wrapper">
                 <img class="page-about__img" src="img/about-img.png" alt="Сохранение данных">
             </div>
         </section>
-        <section class="page-learn-more container">
+        <section class="page-learn-more container" id="learn-more">
             <div class="page-learn-more__img-wrapper">
                 <img class="page-learn-more__img" src="img/learn-more-img.png">
             </div>
@@ -46,7 +49,7 @@
                     This very flexible storage area has a high level of security. To enter into your own data you must enter the password that you created when you registered in this Data Warehouse. </p>    
             </div>
         </section>
-        <section class="page-features container">
+        <section class="page-features container" id="features">
             <div class="page-features__wrapper">
                 <h2 class="page-features__h2">Features</h2>
                  <p class="page-features__p">Some of the features and advantages that we provide for those of you who store data in this Data Warehouse.</p>
@@ -150,8 +153,8 @@
             </div>
             
         </section>
-        <hr>
-        <section class="page-footer container">
+        <hr class="page-footer__line">
+        <section class="page-footer container" id="help">
             <div>
                 <div class="page-footer__company-name-wrapper">
                     <img class="page-footer__logo" src="img/Logo.svg" alt="Логотип Warehouse">
