@@ -3,6 +3,7 @@
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
+    /* а где сами шрифты??? директории fonts нет в репе */
     src: url('../fonts/ubuntu-v19-latin-regular.eot'); /* IE9 Compat Modes */
     src: local(''),
          url('../fonts/ubuntu-v19-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -11,7 +12,7 @@
          url('../fonts/ubuntu-v19-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/ubuntu-v19-latin-regular.svg#Ubuntu') format('svg'); /* Legacy iOS */
   }
-  
+
   /* ubuntu-500 - latin */
   @font-face {
     font-family: 'Ubuntu';
@@ -25,7 +26,7 @@
          url('../fonts/ubuntu-v19-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/ubuntu-v19-latin-500.svg#Ubuntu') format('svg'); /* Legacy iOS */
   }
-  
+
   /* ubuntu-700 - latin */
   @font-face {
     font-family: 'Ubuntu';
@@ -39,8 +40,9 @@
          url('../fonts/ubuntu-v19-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/ubuntu-v19-latin-700.svg#Ubuntu') format('svg'); /* Legacy iOS */
   }
-  
+
 body {
+    /* нет дефолтных стилей, нет мин ширины страницы */
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -76,8 +78,10 @@ ul {
 
 .page-header__site-nav-li {
     font-family: 'Ubuntu', sans-serif;
+    /* font-weight не измеряется в px */
     font-weight: 500px;
     font-size: 16px;
+    /* 1 через точку 2 Значения с плавающей точкой в пикселях могут отображаться по-разному в разных браузерах  */
     line-height: 25,6;
     margin-right: 40px;
 }
@@ -103,6 +107,7 @@ ul {
     font-weight: bold;
     font-size: 80px;
     line-height: 88px;
+    /* цвета надо выносить в переменные */
     color: #212353;
     width: 645px;
 }
@@ -233,8 +238,8 @@ ul {
 }
 
 .page-features__li:nth-child(4) {
-    background: url("../img/feature-bg-4.png"); 
-    background-repeat: no-repeat;   
+    background: url("../img/feature-bg-4.png");
+    background-repeat: no-repeat;
 }
 
 .page-features__img-wrapper {
@@ -278,7 +283,7 @@ ul {
     letter-spacing: 0.005em;
     color: #212353;
     position: relative;
-    
+
 }
 
 .page-features_a:after {
@@ -426,6 +431,7 @@ ul {
 }
 
 .page-footer__copyright {
+    /* два display: flex; */
     display: flex;
     flex-direction: column;
     font-family: 'Ubuntu', sans-serif;
@@ -458,14 +464,14 @@ ul {
     opacity: 0.1;
     border-radius: 25px;
 }
-
+/* адаптив не доделан */
 @media all and (max-width: 375px){
 
 }
 
 @media all and (min-width: 768px) and (max-width: 1439px){
     .container{
-       margin-left: 50px; 
+       margin-left: 50px;
     }
     .page-features__li {
         margin-left: auto;
@@ -474,11 +480,11 @@ ul {
     .page-about {
         flex-direction: column;
     }
-    
+
     .page-about__img-wrapper {
         position: initial;
     }
-    
+
     .page-about__img {
         position: initial;
     }
